@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_mostrarLibros">
+
+    <fragment
+        android:id="@+id/nav_mostrarLibros"
+        android:name="com.example.bibliotecaapp.ui.MostrarLibro.MostrarLibrosFragment"
+        android:label="Menu Principal"
+        tools:layout="@layout/fragment_mostrar_libro" />
+    <fragment
+        android:id="@+id/nav_seleccionar"
+        android:name="com.example.bibliotecaapp.ui.SeleccionarLibro.SeleccionarFragment"
+        android:label="Detalles"
+        tools:layout="@layout/fragment_seleccionar" />
+    <fragment
+        android:id="@+id/nav_datosUsuarios"
+        android:name="com.example.bibliotecaapp.ui.DatosUsuario.DatosUsuarioFragment"
+        android:label="Datos"
+        tools:layout="@layout/fragment_datos_usuario" />
+    <fragment
+        android:id="@+id/nav_pantallaFinal"
+        android:name="com.example.bibliotecaapp.ui.PantallaFinal.PantallaFinalFragment"
+        android:label="Procesado"
+        tools:layout="@layout/fragment_pantalla_final" />
+
+</navigation>
